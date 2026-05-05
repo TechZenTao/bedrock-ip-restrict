@@ -244,6 +244,5 @@ def main():
     {"create": cmd_create, "show": cmd_show, "update": cmd_update,
      "delete": cmd_delete, "test": cmd_test}[args.command](args)
 
-
 if __name__ == "__main__":
     main()

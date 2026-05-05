@@ -1,4 +1,4 @@
-[中文](README.md)
+[中文](README.md) &nbsp;&nbsp;&nbsp;&nbsp;   [Claude Skill](Skill.md)
 
 # Bedrock IP Restrict
 

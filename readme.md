@@ -80,7 +80,6 @@ aws bedrock-runtime invoke-model \
 ## 注意事项
 
 - **IAM 策略全局生效**，一条策略覆盖所有 Region 的 Bedrock 调用
-- **必须使用单区域模型 ID**（如 `anthropic.claude-sonnet-4-20250514-v1:0`），不要使用跨区域推理配置文件（`us.anthropic.*`），否则 `aws:SourceIp` 会变成 AWS 内部代理 IP，导致 IP 白名单失效
 - IP 地址会自动补全 `/32` 后缀，也支持直接传入 CIDR（如 `10.0.0.0/24`）
 - IAM 策略传播通常需要几秒到一分钟，创建/更新后稍等片刻再测试
 - 策略仅允许 `InvokeModel` 和 `InvokeModelWithResponseStream`，不包含 `ListFoundationModels` 等控制面 API

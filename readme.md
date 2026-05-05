@@ -1,3 +1,5 @@
+[English](README_en.md)
+
 # Bedrock IP Restrict
 
 通过 IAM 用户策略限制 Bedrock 推理调用的源 IP，创建一个只能从指定 IP 调用 `InvokeModel` 的 IAM 用户及 AK/SK。
